@@ -478,6 +478,7 @@ class TestRawTurtle(unittest.TestCase):
         self.assertEqual(another_turtle.currentLineItem, another_turtle.items[-1])
         self.assertFalse(rawturtle.currentLineItem in another_turtle.items)
 
+
 class TestTurtleScreen(unittest.TestCase):
     def test_save_raises_if_wrong_extension(self) -> None:
         screen = unittest.mock.Mock()
